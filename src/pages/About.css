@@ -1,0 +1,174 @@
+.about-page {
+  width: 100%;
+  color: #26343e;
+  background-color: #ffffff;
+}
+
+.about-label {
+  margin: 0 0 12px;
+  color: #138a5b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.about-heading {
+  padding: 72px 7%;
+  border-bottom: 1px solid #dbe3ea;
+  text-align: center;
+}
+
+.about-heading h1 {
+  margin: 0 0 16px;
+  color: #0d2d48;
+  font-size: 48px;
+}
+
+.about-heading > p:last-child {
+  margin: 0;
+  color: #5c6a73;
+  font-size: 19px;
+}
+
+.who-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 65px 7%;
+  background-color: #f5f8fb;
+}
+
+.about-photo,
+.who-content {
+  flex: 1;
+}
+
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-left: 6px solid #138a5b;
+}
+
+.about-photo figcaption {
+  margin-top: 8px;
+  color: #6a7780;
+  font-size: 11px;
+}
+
+.about-photo figcaption a {
+  color: #0d5f43;
+}
+
+.who-content h2,
+.mission-section h2,
+.values-section h2,
+.choose-section h2 {
+  margin: 0 0 18px;
+  color: #0d2d48;
+  font-size: 34px;
+}
+
+.who-content > p:not(.about-label) {
+  margin: 0 0 16px;
+  color: #53616a;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.mission-section {
+  padding: 58px 12%;
+  border-bottom: 1px solid #dbe3ea;
+  text-align: center;
+}
+
+.mission-section p:last-child {
+  max-width: 780px;
+  margin: 0 auto;
+  color: #53616a;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.values-section {
+  padding: 65px 7%;
+  background-color: #f5f8fb;
+  text-align: center;
+}
+
+.values-list {
+  display: flex;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.value-card {
+  flex: 1;
+  min-height: 210px;
+  padding: 26px 22px;
+  border: 1px solid #d9e1e7;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.value-card span {
+  color: #138a5b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.value-card h3 {
+  margin: 22px 0 12px;
+  color: #0d2d48;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.value-card p {
+  margin: 0;
+  color: #5c6a73;
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.choose-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  padding: 60px 9%;
+  border-top: 5px solid #138a5b;
+}
+
+.choose-section > div {
+  max-width: 700px;
+}
+
+.choose-section p:last-child {
+  margin: 0;
+  color: #53616a;
+  line-height: 1.65;
+}
+
+.about-button {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 14px 28px;
+  color: #ffffff;
+  background-color: #138a5b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.about-button:hover {
+  background-color: #0f704a;
+}
