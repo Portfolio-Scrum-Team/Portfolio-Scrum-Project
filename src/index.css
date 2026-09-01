@@ -1,7 +1,9 @@
 :root {
   font-family: Arial, sans-serif;
-  color: #ffffff;
-  background-color: #1a1a1a;
+  color: #26343e;
+  background-color: #eef3f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -12,9 +14,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1a1a1a;
+  background-color: #eef3f7;
 }
 
 a {
-  color: #ffffff;
+  color: inherit;
 }

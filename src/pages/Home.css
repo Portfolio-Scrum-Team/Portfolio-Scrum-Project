@@ -1,0 +1,173 @@
+.home-page {
+  width: 100%;
+  color: #26343e;
+  background-color: #ffffff;
+}
+
+.home-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 28, 45, 0.9) 0%,
+    rgba(7, 28, 45, 0.68) 45%,
+    rgba(7, 28, 45, 0.08) 78%
+  );
+}
+
+.home-hero-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 7%;
+  width: 510px;
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.home-location,
+.section-label {
+  margin: 0 0 12px;
+  color: #51c990;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.home-hero-content h1 {
+  margin: 0 0 18px;
+  font-size: 54px;
+  line-height: 1.08;
+}
+
+.home-intro {
+  margin: 0 0 30px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 14px 28px;
+  color: #ffffff;
+  background-color: #138a5b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.primary-button:hover {
+  background-color: #0f704a;
+}
+
+.photo-credit {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 14px;
+  padding: 5px 8px;
+  color: #ffffff;
+  background-color: rgba(7, 28, 45, 0.68);
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.home-services {
+  padding: 70px 7%;
+  background-color: #f5f8fb;
+  text-align: center;
+}
+
+.home-services .section-label {
+  color: #138a5b;
+}
+
+.home-services h2 {
+  margin: 0 0 12px;
+  color: #0d2d48;
+  font-size: 38px;
+}
+
+.section-intro {
+  margin: 0 auto 38px;
+  color: #5c6a73;
+  font-size: 17px;
+}
+
+.service-list {
+  display: flex;
+  gap: 24px;
+}
+
+.service-card {
+  flex: 1;
+  min-height: 220px;
+  padding: 30px;
+  border: 1px solid #d9e1e7;
+  border-top: 4px solid #138a5b;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.service-card span {
+  color: #138a5b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.service-card h3 {
+  margin: 22px 0 13px;
+  color: #0d2d48;
+  font-size: 23px;
+}
+
+.service-card p {
+  margin: 0;
+  color: #5c6a73;
+  line-height: 1.65;
+}
+
+.local-promise {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 32px 7%;
+  color: #ffffff;
+  background-color: #173d59;
+}
+
+.local-promise div {
+  flex: 1;
+  text-align: center;
+}
+
+.local-promise strong,
+.local-promise span {
+  display: block;
+}
+
+.local-promise strong {
+  margin-bottom: 6px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.local-promise span {
+  color: #c9d8e2;
+  font-size: 13px;
+}
