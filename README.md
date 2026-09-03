@@ -92,3 +92,24 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Jira Integration
+
+1. Copy [.env.example](.env.example) to a real `.env` file and fill in your Jira values.
+2. Set:
+   - JIRA_BASE_URL to your Atlassian URL, for example https://your-company.atlassian.net
+   - JIRA_EMAIL to the email used for Jira access
+   - JIRA_API_TOKEN to your Jira API token
+   - JIRA_PROJECT_KEY to PORT
+   - JIRA_ISSUE_KEY to PORT-6
+   - JIRA_TARGET_STATUS to In Progress
+3. Run:
+
+```bash
+npm run jira:status
+```
+
+This script reads the current issue transitions from Jira and updates the target issue to the requested status using the Jira REST API.
+
+> Important: this workspace cannot log in to your Jira account directly. It needs your Atlassian credentials and a valid API token to connect.
+
