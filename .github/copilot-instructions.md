@@ -1,0 +1,5 @@
+- Keep this project as a team Scrum React portfolio website.
+- Preserve page structure: Home, About, Projects, Profile.
+- Keep routing centralized in src/App.jsx.
+- Keep styling simple, responsive, and consistent.
+- When adding features, include Jira task mapping notes in README where relevant.

@@ -1,71 +1,116 @@
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #1f2a37;
+  --muted: #5b6878;
+  --brand: #0f766e;
+  --brand-soft: #ccfbf1;
+  --line: #dce3ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #e8fff8, var(--bg) 45%);
+}
+
 .site-shell {
-  width: 100%;
-  max-width: 1200px;
-  min-height: 100vh;
+  max-width: 960px;
   margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 0 24px rgba(13, 45, 72, 0.12);
+  padding: 24px 16px 40px;
 }
 
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 7%;
-  border-bottom: 1px solid #dbe3ea;
-  background-color: #ffffff;
+  margin-bottom: 16px;
 }
 
-.site-name {
-  color: #0d2d48;
-  font-size: 25px;
-  font-weight: 700;
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 24px;
+}
+
+.top-nav a {
   text-decoration: none;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: var(--surface);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
 }
 
-.site-name span {
-  color: #138a5b;
+.top-nav a.active {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
 }
 
-nav {
-  display: flex;
-  gap: 28px;
+main section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
 }
 
-nav a {
-  padding: 5px 0;
-  text-decoration: none;
-  color: #354653;
-  font-weight: 500;
-  border-bottom: 2px solid transparent;
+main h2 {
+  margin-top: 0;
 }
 
-nav a:hover,
-nav a[aria-current="page"] {
-  color: #0d2d48;
-  border-color: #138a5b;
+.card-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
 }
 
-main {
-  min-height: 70vh;
+.card {
+  border: 1px solid var(--line);
+  background: var(--brand-soft);
+  border-radius: 12px;
+  padding: 12px;
 }
 
-.site-footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 38px 7%;
-  color: #dbe7ef;
-  background-color: #0d2d48;
+.card h3 {
+  margin-top: 0;
 }
 
-.site-footer p {
-  margin: 5px 0;
+.profile-page .sprint-card {
+  margin-top: 14px;
+  background: #f2fffb;
 }
 
-.footer-name {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 700;
+.checklist {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.checklist li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .site-shell {
+    padding-top: 16px;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
 }
