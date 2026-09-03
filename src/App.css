@@ -1,116 +1,71 @@
-:root {
-  --bg: #f6f8fb;
-  --surface: #ffffff;
-  --text: #1f2a37;
-  --muted: #5b6878;
-  --brand: #0f766e;
-  --brand-soft: #ccfbf1;
-  --line: #dce3ea;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text);
-  background: radial-gradient(circle at top right, #e8fff8, var(--bg) 45%);
-}
-
 .site-shell {
-  max-width: 960px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 24px 16px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 24px rgba(13, 45, 72, 0.12);
 }
 
 .site-header {
-  margin-bottom: 16px;
-}
-
-.site-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.site-header p {
-  margin: 6px 0 0;
-  color: var(--muted);
-}
-
-.top-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 16px 0 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 7%;
+  border-bottom: 1px solid #dbe3ea;
+  background-color: #ffffff;
 }
 
-.top-nav a {
+.site-name {
+  color: #0d2d48;
+  font-size: 25px;
+  font-weight: 700;
   text-decoration: none;
-  border: 1px solid var(--line);
-  color: var(--text);
-  background: var(--surface);
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: 600;
 }
 
-.top-nav a.active {
-  background: var(--brand);
-  color: #fff;
-  border-color: var(--brand);
+.site-name span {
+  color: #138a5b;
 }
 
-main section {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 18px;
+nav {
+  display: flex;
+  gap: 28px;
 }
 
-main h2 {
-  margin-top: 0;
+nav a {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #354653;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
 }
 
-.card-grid {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #0d2d48;
+  border-color: #138a5b;
 }
 
-.card {
-  border: 1px solid var(--line);
-  background: var(--brand-soft);
-  border-radius: 12px;
-  padding: 12px;
+main {
+  min-height: 70vh;
 }
 
-.card h3 {
-  margin-top: 0;
+.site-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 38px 7%;
+  color: #dbe7ef;
+  background-color: #0d2d48;
 }
 
-.profile-page .sprint-card {
-  margin-top: 14px;
-  background: #f2fffb;
+.site-footer p {
+  margin: 5px 0;
 }
 
-.checklist {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.checklist li {
-  margin-bottom: 8px;
-}
-
-@media (max-width: 640px) {
-  .site-shell {
-    padding-top: 16px;
-  }
-
-  .site-header h1 {
-    font-size: 1.6rem;
-  }
+.footer-name {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
 }

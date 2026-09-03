@@ -1,5 +1,22 @@
-html,
-body,
-#root {
-  min-height: 100%;
+:root {
+  font-family: Arial, sans-serif;
+  color: #26343e;
+  background-color: #eef3f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #eef3f7;
+}
+
+a {
+  color: inherit;
 }
